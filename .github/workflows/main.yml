@@ -24,7 +24,7 @@ jobs:
           go install
           cd ..
           export PATH=$PATH:$(go env GOPATH)/bin
-          tweego src -o index.html
+          tweego src -o dist/index2.html
 
       - name: Deploy to Pages
         uses: peaceiris/actions-gh-pages@v3
