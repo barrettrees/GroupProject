@@ -11,14 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - name: Use Go 1.x
+      - name: Use Go 1.13
         uses: actions/setup-go@v1
         with:
-          go-version: 1.x.x
+          go-version: 1.13.x
 
       - name: build game
         run: |
-          go install github.com/tmedwards/tweego
+          go get github.com/tmedwards/tweego
           export PATH=$PATH:$(go env GOPATH)/bin
           tweego -o dist/index.html ./src
 
