@@ -105,7 +105,9 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
 	<!-- UUID://08B4FA3F-D98A-4E02-9464-EC59CE12F917// --><tw-storydata name="GroupProject" startnode="1" creator="Tweego" creator-version="2.1.1" ifid="08B4FA3F-D98A-4E02-9464-EC59CE12F917" zoom="1" format="SugarCube" format-version="2.37.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">/* Import the jQuery UI library. */
-importScripts("https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js");</script><tw-passagedata pid="1" name="The Adventure Begins" tags="" position="750,225" size="100,100">The adventure begins here! You link to another passage [[like this]]
+importScripts("https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js",
+    "https://lazerwalker.com/playfab-twine/index.js"
+);</script><tw-passagedata pid="1" name="The Adventure Begins" tags="" position="750,225" size="100,100">The adventure begins here! You link to another passage [[like this]]
 This edit was made at 11:31 on August 4th!
 or [[AltStart]] canary
 &lt;&lt;set $score to 5&gt;&gt;
@@ -114,16 +116,16 @@ This update was at 1:38pm on August 4th</tw-passagedata><tw-passagedata pid="5" 
 &lt;div id=&quot;box&quot; style=&quot;width: 100px; height: 100px; background: #ccc;&quot;&gt;&lt;/div&gt;
 
 &lt;&lt;script&gt;&gt;
-var url = &quot;https://barrettrees.com/GroupProject/&quot;;
+var url = &quot;https://lazerwalker.com/playfab-twine/index.js&quot;;
 var playfabID = &quot;18327D&quot;;
 var trackedVariables = [&quot;score&quot;,&quot;hasPetDog&quot;];
 
-// $(function() {
-//   $.getScript(url, function(data, textStatus, jqxhr) {
-//     const trackedVariables = [];
-//     setupPlayfab(playfabID, trackedVariables, State);
-//   });
-// });
+$(function() {
+  $.getScript(url, function(data, textStatus, jqxhr) {
+    const trackedVariables = [];
+    setupPlayfab(playfabID, trackedVariables, State);
+  });
+});
 
 $(document).one(&#39;:passagerender&#39;, function (ev) {
   $(ev.content)
