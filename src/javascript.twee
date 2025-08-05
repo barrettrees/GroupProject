@@ -11,12 +11,12 @@ var url = "https://barrettrees.com/GroupProject/";
 var playfabID = "18327D";
 var trackedVariables = ["score","hasPetDog"];
 
-$(function() {
-  $.getScript(url, function(data, textStatus, jqxhr) {
-    const trackedVariables = [];
-    setupPlayfab(playfabID, trackedVariables, State);
-  });
-});
+// $(function() {
+//   $.getScript(url, function(data, textStatus, jqxhr) {
+//     const trackedVariables = [];
+//     setupPlayfab(playfabID, trackedVariables, State);
+//   });
+// });
 
 $(document).one(':passagerender', function (ev) {
   $(ev.content)
