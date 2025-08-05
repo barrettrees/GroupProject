@@ -14,4 +14,3 @@ setup.myGlobalFunction = function() {
   });
 };
 
-myGlobalFunction();
