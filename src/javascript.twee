@@ -1,22 +1,24 @@
 :: UserScript [script]
 /* Import the jQuery UI library. */
-importScripts("https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js");
+importScripts("https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js",
+    "https://lazerwalker.com/playfab-twine/index.js"
+);
 
 :: AltStart
 <p>Click on the grey box below to see it bounce.</p>
 <div id="box" style="width: 100px; height: 100px; background: #ccc;"></div>
 
 <<script>>
-var url = "https://barrettrees.com/GroupProject/";
+var url = "https://lazerwalker.com/playfab-twine/index.js";
 var playfabID = "18327D";
 var trackedVariables = ["score","hasPetDog"];
 
-// $(function() {
-//   $.getScript(url, function(data, textStatus, jqxhr) {
-//     const trackedVariables = [];
-//     setupPlayfab(playfabID, trackedVariables, State);
-//   });
-// });
+$(function() {
+  $.getScript(url, function(data, textStatus, jqxhr) {
+    const trackedVariables = [];
+    setupPlayfab(playfabID, trackedVariables, State);
+  });
+});
 
 $(document).one(':passagerender', function (ev) {
   $(ev.content)
