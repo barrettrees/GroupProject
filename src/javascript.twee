@@ -1,16 +1,15 @@
-:: StoryScript [script]
-var url = "https://barrettrees.com/GroupProject/";
+// :: StoryScript [script]
+// var url = "https://barrettrees.com/GroupProject/";
 
-// Your PlayFab Title ID, found in Step 2
-var playfabID = "18327D";
+// // Your PlayFab Title ID, found in Step 2
+// var playfabID = "18327D";
 
-// An array of every Twine variable you want to track (don't include the dollar sign)
-var trackedVariables = ["score","hasPetDog"];
+// // An array of every Twine variable you want to track (don't include the dollar sign)
+// var trackedVariables = ["score","hasPetDog"];
 
-setup.myGlobalFunction = function() {
-  $.getScript(url, function(data, textStatus, jqxhr) {
-    const trackedVariables = [];
-    setupPlayfab(playfabID, trackedVariables, State);
-  });
-};
-
+// $(function() {
+//   $.getScript(url, function(data, textStatus, jqxhr) {
+//     const trackedVariables = [];
+//     setupPlayfab(playfabID, trackedVariables, State);
+//   });
+// });
