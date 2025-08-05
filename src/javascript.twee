@@ -13,3 +13,5 @@ setup.myGlobalFunction = function() {
     setupPlayfab(playfabID, trackedVariables, State);
   });
 };
+
+myGlobalFunction();
