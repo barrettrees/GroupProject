@@ -4,12 +4,11 @@ var url = "https://barrettrees.com/GroupProject/";
 var playfabID = "18327D";
 
 // An array of every Twine variable you want to track (don't include the dollar sign)
-var trackedVariables = [];
+var trackedVariables = ["score","hasPetDog"];
 
 $(function() {
   $.getScript(url, function(data, textStatus, jqxhr) {
+    const trackedVariables = [];
     setupPlayfab(playfabID, trackedVariables, State);
   });
 });
-
-

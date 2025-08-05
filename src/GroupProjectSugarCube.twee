@@ -12,9 +12,12 @@ GroupProject
 }
 
 
+
 :: The Adventure Begins {"position":"750,225","size":"100,100"}
 The adventure begins here! You link to another passage [[like this]]
 This edit was made at 11:31 on August 4th!
+<<set $score to 5>>
+<<set $hasPetDog to "False">>
 
 
 :: like this {"position":"700,450","size":"100,100"}
