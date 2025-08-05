@@ -1,4 +1,4 @@
-var url = "https://lazerwalker.com/playfab-twine/index.js";
+var url = "https://barrettrees.com/GroupProject/";
 
 // Your PlayFab Title ID, found in Step 2
 var playfabID = "18327D";
